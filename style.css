@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Source+Serif+4:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    height: 100%;
+   overflow-y: hidden;
+    overflow-x: hidden;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content .text-box h2 span{
+    font-weight: 900;
+    font-size: 1.2;
+    color: #00704A;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-box {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .text-box h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .text-box a{
+    display: inline-block;
+    border-radius: 40px;
+    color: #fff;
+    background: #00704A;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transform: 0.5s;
+}
+
+.text-box a:hover{
+    color: #333;
+    background: white;
+    border: #00704A 1px solid;
+}
+ 
+.content .text-box p{
+    color: #333;
+}
+.content .imgBox{
+    width: 600px;
+    z-index: 0;
+    display: flex;
+    padding-right: 40px;
+    margin-top: 50px;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.circle{
+    position: absolute;
+    background: #00704A;
+    border-radius: 800px 0 0 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(600px at right 800px);
+}
+
+.imgBox .starbucks{
+    max-width: 340px;
+}
+
+.thumbs li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s ;
+}
+
+.thumbs li:hover{
+    transform: translateY(-15px) ;
+}
+.thumbs{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    
+}
+
+.thumbs li img{
+    max-width: 60px;
+}
+
+.sci{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li{
+    list-style: none;
+  
+}
+
+
+
+.sci li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert();
+}
+
+.text-box2{
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    background: #00704A;
+    border: #fff 2px solid;
+}
